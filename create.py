@@ -16,7 +16,6 @@ def create():
     username = str(sys.argv[2])
     password = str(sys.argv[3])
     print('excuting....')
-    os.mkdir(foldername)
     username_field = browser.find_elements_by_xpath('//*[@id="login_field"]')[0]
     username_field.send_keys(username)
     password_field = browser.find_elements_by_xpath('//*[@id="password"]')[0]
